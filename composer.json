@@ -16,6 +16,9 @@
             "aliases": {
 
             }
+        },
+        "installer-paths": {
+            "/modules/core": ["vendor/snlprjpti/core"]
         }
     },
     "autoload": {

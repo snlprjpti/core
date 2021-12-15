@@ -71,24 +71,24 @@ class CoreServiceProvider extends ServiceProvider
      */
     protected function registerConfig()
     {
-        $this->publishes([
-            module_path($this->moduleName, 'Config/config.php') => config_path($this->moduleNameLower . '.php'),
-        ], 'config');
-        $this->mergeConfigFrom(
-            module_path($this->moduleName, 'Config/config.php'), $this->moduleNameLower
-        );
-        $this->mergeConfigFrom(
-            module_path($this->moduleName, 'Config/configuration.php'), "configuration"
-        );
-        $this->mergeConfigFrom(
-            module_path($this->moduleName, 'Config/website.php'), "website"
-        );
-        $this->mergeConfigFrom(
-            module_path($this->moduleName, 'Config/currencies.php'), "currencies"
-        );
-        $this->mergeConfigFrom(
-            module_path($this->moduleName, 'Config/time_zones.php'), "time_zones"
-        );
+//        $this->publishes([
+//            module_path($this->moduleName, 'Config/config.php') => config_path($this->moduleNameLower . '.php'),
+//        ], 'config');
+//        $this->mergeConfigFrom(
+//            module_path($this->moduleName, 'Config/config.php'), $this->moduleNameLower
+//        );
+//        $this->mergeConfigFrom(
+//            module_path($this->moduleName, 'Config/configuration.php'), "configuration"
+//        );
+//        $this->mergeConfigFrom(
+//            module_path($this->moduleName, 'Config/website.php'), "website"
+//        );
+//        $this->mergeConfigFrom(
+//            module_path($this->moduleName, 'Config/currencies.php'), "currencies"
+//        );
+//        $this->mergeConfigFrom(
+//            module_path($this->moduleName, 'Config/time_zones.php'), "time_zones"
+//        );
     }
 
     /**

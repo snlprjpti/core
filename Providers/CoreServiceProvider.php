@@ -82,7 +82,7 @@ class CoreServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../' =>  __DIR__ . '/../../../../Modules/Core/',
-        ]);
+        ], "Module_Core");
     }
 
     /**

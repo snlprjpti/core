@@ -23,7 +23,7 @@ class LocaleController extends BaseController
 
     /**
      * Display a listing of the resource.
-     * 
+     *
      * @param Request $request
      * @return JsonResponse
      */
@@ -31,6 +31,7 @@ class LocaleController extends BaseController
     {
         try
         {
+            dd("dasdasdasdasddas");
             $this->validateListFiltering($request);
             $locales = $this->getFilteredList($request);
         }
@@ -52,7 +53,7 @@ class LocaleController extends BaseController
 
     /**
      * Store a newly created resource in storage.
-     * 
+     *
      * @param Request $request
      * @return JsonResponse
      */
@@ -84,7 +85,7 @@ class LocaleController extends BaseController
 
     /**
      * Get the particular resource
-     * 
+     *
      * @param int $id
      * @return JsonResponse
      */
@@ -176,7 +177,7 @@ class LocaleController extends BaseController
 
     /**
      * Custom Validation for Store/Update
-     * 
+     *
      * @param Request $request
      * @param int $id
      * @return Array

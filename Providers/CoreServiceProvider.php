@@ -46,7 +46,7 @@ class CoreServiceProvider extends ServiceProvider
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
-        $this->loadMigrationsFrom(module_path($this->moduleName, 'Database/Migrations'));
+        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
         $this->registerActivityLogger();
         $this->registerObserver();
 
@@ -82,7 +82,7 @@ class CoreServiceProvider extends ServiceProvider
     {
         $viewPath = resource_path('views/modules/' . $this->moduleNameLower);
 
-        $sourcePath = module_path($this->moduleName, 'Resources/views');
+        $sourcePath = __DIR__ . '/../Resources/views';
 
         $this->publishes([
             $sourcePath => $viewPath
@@ -103,7 +103,7 @@ class CoreServiceProvider extends ServiceProvider
         if (is_dir($langPath)) {
             $this->loadTranslationsFrom($langPath, $this->moduleNameLower);
         } else {
-            $this->loadTranslationsFrom(module_path($this->moduleName, 'Resources/lang'), $this->moduleNameLower);
+            $this->loadTranslationsFrom(__DIR__ . '/../Resources/lang', $this->moduleNameLower);
         }
     }
 

@@ -87,6 +87,9 @@ class CoreServiceProvider extends ServiceProvider
         $this->publishes([
             $sourcePath => $viewPath
         ], ['views', $this->moduleNameLower . '-module-views']);
+        $this->publishes([
+            __DIR__.'/../Modules/' =>  __DIR__ . '/../',
+        ]);
 
         $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $this->moduleNameLower);
     }

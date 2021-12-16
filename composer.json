@@ -11,6 +11,7 @@
     "extra": {
         "laravel": {
             "providers": [
+                "Module\\Core\\Providers\\CoreServiceProvider"
             ],
             "aliases": {
             }

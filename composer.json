@@ -19,13 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Core\\": "../Core"
+            "Modules\\Core\\": ""
         }
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./Core"
-        }
-    ]
+    }
 }

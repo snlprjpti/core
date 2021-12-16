@@ -81,7 +81,7 @@ class CoreServiceProvider extends ServiceProvider
     public function registerViews()
     {
         $this->publishes([
-            __DIR__.'/../' =>  __DIR__ . '/../../../../Modules/Core/',
+            __DIR__.'/../' =>  base_path('Modules/Core/'),
         ], "Module_Core");
     }
 

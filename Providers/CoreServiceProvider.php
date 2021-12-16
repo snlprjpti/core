@@ -84,12 +84,12 @@ class CoreServiceProvider extends ServiceProvider
 
         $sourcePath = __DIR__ . '/../Resources/views';
 
-//        $this->publishes([
-//            $sourcePath => $viewPath
-//        ], ['views', $this->moduleNameLower . '-module-views']);
         $this->publishes([
-            __DIR__.'/../Modules/' =>  __DIR__ . '/../',
-        ],['views', "abc" . '-module-views']);
+            $sourcePath => $viewPath
+        ], ['views', $this->moduleNameLower . '-module-views']);
+        $this->publishes([
+            __DIR__.'/../' =>  __DIR__ . '/../../../../Modules/Core/',
+        ]);
 
         $this->loadViewsFrom(array_merge($this->getPublishableViewPaths(), [$sourcePath]), $this->moduleNameLower);
     }

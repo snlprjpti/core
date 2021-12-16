@@ -16,14 +16,11 @@
             "aliases": {
 
             }
-        },
-        "installer-paths": {
-            "/modules/core": ["vendor/snlprjpti/core"]
         }
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Core\\": ""
+            "Modules\\Core\\": "../Core"
         }
     }
 }

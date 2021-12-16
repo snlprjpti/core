@@ -14,7 +14,6 @@
                 "Module\\Core\\Providers\\CoreServiceProvider"
             ],
             "aliases": {
-
             }
         }
     },
@@ -22,5 +21,11 @@
         "psr-4": {
             "Modules\\Core\\": "../Core"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./Core"
+        }
+    ]
 }

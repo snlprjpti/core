@@ -31,7 +31,7 @@ class LocaleController extends BaseController
     {
         try
         {
-            dd("dasdasdasdasddas");
+            dd("xxx");
             $this->validateListFiltering($request);
             $locales = $this->getFilteredList($request);
         }

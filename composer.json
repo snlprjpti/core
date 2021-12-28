@@ -18,8 +18,9 @@
         }
     },
     "autoload": {
-        "psr-4": {
-            "Modules\\Core\\": ""
+        "psr-0": {
+            "Modules\\Core\\": "src/"
         }
-    }
+    },
+    "deps": ["vendor/symfony/dependency-injection"]
 }
